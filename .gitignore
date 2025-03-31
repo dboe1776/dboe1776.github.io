@@ -1,0 +1,39 @@
+# Node.js and npm (if you add dependencies later)
+node_modules/
+package-lock.json
+
+# Local environment files
+.env
+*.env
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+
+# Build and distribution files
+dist/
+build/
+
+# macOS-specific files
+.DS_Store
+
+# # Large media files (optional - adjust as needed)
+# assets/img/*.jpg  # Ignore all JPGs in img folder
+# assets/img/*.png  # Ignore all PNGs in img folder
+# assets/projects/*.jpg
+# assets/projects/*.png
+
+# # Add exceptions for specific files you WANT to track
+# !assets/img/profile.jpg
+# !assets/img/header-bg.jpg
+# !assets/projects/project1.jpg
+# !assets/projects/project2.jpg
+
+drafts/

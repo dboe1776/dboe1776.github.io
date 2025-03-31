@@ -1,0 +1,185 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0; /* Light gray text for readability on dark background */
+    background-color: #1a1a1a; /* Dark gray-black for the page */
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header-bg {
+    background-image: url('assets/img/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    position: relative;
+}
+
+/* Overlay for header */
+.header-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.header-bg .container {
+    position: relative;
+    z-index: 2;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #66b3ff; /* Lighter blue for hover in dark mode */
+}
+
+/* Sections */
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff; /* White headings for contrast */
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    transform: scale(0.75);
+    transform-origin: center;
+}
+
+/* Projects */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: #2b2b2b; /* Darker gray for project cards */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project h3 {
+    margin: 10px 0;
+    color: #ffffff; /* White for project titles */
+}
+
+.project a {
+    color: #66b3ff; /* Light blue links */
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Education */
+.education-item {
+    background: #2b2b2b; /* Matching dark gray for education cards */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.education-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #ffffff; /* White for degree titles */
+}
+
+.education-item p {
+    margin: 5px 0;
+}
+
+.education-item em {
+    color: #b3b3b3; /* Lighter gray for dates */
+    font-size: 0.9em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2b2b2b; /* Darker footer */
+    color: #e0e0e0;
+}
+
+/* Contact Section */
+#contact a {
+    color: #99ccff; /* Lighter blue for better contrast */
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #cce5ff; /* Even lighter blue on hover */
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
