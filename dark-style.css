@@ -172,6 +172,19 @@ footer {
     text-decoration: underline;
 }
 
+/* Publication Section */
+#publications a {
+    color: #99ccff; /* Lighter blue for better contrast */
+    text-decoration: none;
+}
+
+#publications a:hover {
+    color: #cce5ff; /* Even lighter blue on hover */
+    text-decoration: underline;
+}
+
+
+
 /* Responsive */
 @media (max-width: 768px) {
     nav ul li {
