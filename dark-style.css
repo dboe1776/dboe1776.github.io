@@ -21,7 +21,7 @@ body {
 
 /* Header */
 .header-bg {
-    background-image: url('assets/img/header-bg.jpg');
+    background-image: url("assets/img/header-bg.jpg");
     background-size: cover;
     background-position: center;
     color: white;
@@ -32,7 +32,7 @@ body {
 
 /* Overlay for header */
 .header-bg::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -183,7 +183,103 @@ footer {
     text-decoration: underline;
 }
 
+.job {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    background: #2b2b2b; /* Matching dark gray for education cards */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
 
+.job-details {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+    border-right: 1px solid #333; /* Vertical line on desktop */
+}
+
+.job-details h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.job-details .company {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.job-details .date {
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.job-responsibilities {
+    flex: 5;
+    text-align: left;
+}
+
+.job-responsibilities ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.job-responsibilities li {
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+    #employment {
+        padding: 10px;
+    }
+
+    #employment h2 {
+        font-size: 28px;
+    }
+
+    .job {
+        flex-direction: column;
+    }
+
+    .job-details {
+        margin-right: 0;
+        border-right: none; /* Remove vertical line on mobile */
+    }
+
+    .job-details h3 {
+        font-size: 20px;
+    }
+
+    .job-details .company {
+        font-size: 16px;
+    }
+
+    .job-details .date {
+        font-size: 14px;
+    }
+
+    .job-responsibilities ul {
+        font-size: 14px;
+        flex-direction: column;
+    }
+
+    .job-responsibilities li {
+        margin-right: 0;
+    }
+}
 
 /* Responsive */
 @media (max-width: 768px) {
