@@ -90,11 +90,15 @@ h2 {
 .profile-img {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: 450%;
     display: block;
     margin: 20px auto;
-    transform: scale(0.75);
+    transform: scale(0.95);
     transform-origin: center;
+}
+
+a {
+    color: #66b3ff; /* Light blue links */
 }
 
 /* Projects */
@@ -120,10 +124,6 @@ h2 {
 .project h3 {
     margin: 10px 0;
     color: #ffffff; /* White for project titles */
-}
-
-.project a {
-    color: #66b3ff; /* Light blue links */
 }
 
 .project a:hover {
